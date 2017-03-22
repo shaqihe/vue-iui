@@ -1,29 +1,29 @@
 <template>
-  <div id="app">
-    <img src="./assets/logo.png">
-    <hello></hello>
-  </div>
+<div id="app">
+    <transition :name="transition">
+        <router-view class="router-view"></router-view>
+    </transition>
+</div>
 </template>
 
 <script>
 import Hello from './components/Hello'
 
 export default {
-  name: 'app',
-  components: {
-    Hello
-  }
+    name: 'app',
+    components: {
+        Hello
+    }
 }
 </script>
 
-<style lang="scss">
-@import "./style/var.scss";
+<style lang="scss">@import "./style/var.scss";
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: $light-blue;
-  margin-top: 60px;
+    font-family: 'Avenir', Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-align: center;
+    color: $light-blue;
+    margin-top: 60px;
 }
 </style>
