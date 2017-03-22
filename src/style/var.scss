@@ -1,14 +1,18 @@
 
-//base color
-
+//base color 根目录有个图片，有对应的颜色效果
+// 的蓝色: 浅 中 深
 $light-blue: #58b7ff;
 $blue: #20a0ff;
 $dark-blue: #1d8ce0;
 
+//辅助： 提示、成功、警告、危险
+$blue: #20a0ff;
 $success: #13ce66;
 $warning: #f7ba2a;
 $danger: #ff4949;
 
+// 中性色用于文本、背景和边框颜色。通过运用不同的中性色，来表现层次结构。
+//颜色的深度依次降低
 $black: #1f2d3d;
 $light-black: #324057;
 $extra-light-black: #475669;
@@ -23,9 +27,3 @@ $extra-light-gray:#eff2f7;
 
 $dark-white: #f9fafc;
 $white: #fff;
-
-
-
-
-
-
