@@ -8,8 +8,13 @@ $dark-blue: #1d8ce0;
 //辅助： 提示、成功、警告、危险
 $blue: #20a0ff;
 $success: #13ce66;
+$success-dark: #1dc668;
+
 $warning: #f7ba2a;
+$warning-dark: #dea726;
+
 $danger: #ff4949;
+$danger-dark: #ce3c39;
 
 // 中性色用于文本、背景和边框颜色。通过运用不同的中性色，来表现层次结构。
 //颜色的深度依次降低
@@ -27,3 +32,6 @@ $extra-light-gray:#eff2f7;
 
 $dark-white: #f9fafc;
 $white: #fff;
+
+//边框
+$border-base: #bfcbd9;

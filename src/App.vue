@@ -1,8 +1,6 @@
 <template>
 <div id="app">
-    <transition :name="transition">
-        <router-view class="router-view"></router-view>
-    </transition>
+    <router-view class="router-view"></router-view>
 </div>
 </template>
 
@@ -17,13 +15,7 @@ export default {
 }
 </script>
 
-<style lang="scss">@import "./style/var.scss";
-#app {
-    font-family: 'Avenir', Helvetica, Arial, sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    text-align: center;
-    color: $light-blue;
-    margin-top: 60px;
-}
+<style lang="scss">
+@import "./style/var.scss";
+
 </style>

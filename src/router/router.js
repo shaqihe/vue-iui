@@ -16,6 +16,13 @@ const routes = [
         }
     },
     {
+        path: "/button",
+        name: "button",
+        component: (resolve) => {
+            require(["../pages/button.vue"], resolve);
+        }
+    },
+    {
         path: '*',
         redirect: {
             name: "index",
