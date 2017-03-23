@@ -38,7 +38,6 @@ export default {
     width: 100%;
     height: 41px;
     margin: 10px 0;
-    padding: 2px 4px;
     cursor: pointer;
     text-align: center;
     border-radius: 4px;
