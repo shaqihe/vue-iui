@@ -1,0 +1,166 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>IconFont</title>
+    <link rel="stylesheet" href="demo.css">
+    <link rel="stylesheet" href="iconfont.css">
+</head>
+<body>
+    <div class="main markdown">
+        <h1>IconFont 图标</h1>
+        <ul class="icon_lists clear">
+            
+                <li>
+                <i class="icon iconfont icon-search"></i>
+                    <div class="name">search</div>
+                    <div class="fontclass">.icon-search</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont icon-back"></i>
+                    <div class="name">back</div>
+                    <div class="fontclass">.icon-back</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont icon-zitiicon"></i>
+                    <div class="name">nav</div>
+                    <div class="fontclass">.icon-zitiicon</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont icon-loading"></i>
+                    <div class="name">loading</div>
+                    <div class="fontclass">.icon-loading</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont icon-footer"></i>
+                    <div class="name">footer</div>
+                    <div class="fontclass">.icon-footer</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont icon-header"></i>
+                    <div class="name">header</div>
+                    <div class="fontclass">.icon-header</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont icon-radio"></i>
+                    <div class="name">radio</div>
+                    <div class="fontclass">.icon-radio</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont icon-go"></i>
+                    <div class="name">go</div>
+                    <div class="fontclass">.icon-go</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont icon-samicon1pxjianhao"></i>
+                    <div class="name">cut</div>
+                    <div class="fontclass">.icon-samicon1pxjianhao</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont icon-scrollvertical"></i>
+                    <div class="name">Scroll-Vertical</div>
+                    <div class="fontclass">.icon-scrollvertical</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont icon-toast"></i>
+                    <div class="name">Toast</div>
+                    <div class="fontclass">.icon-toast</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont icon-anonymous-iconfont"></i>
+                    <div class="name">action</div>
+                    <div class="fontclass">.icon-anonymous-iconfont</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont icon-password"></i>
+                    <div class="name">password</div>
+                    <div class="fontclass">.icon-password</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont icon-7"></i>
+                    <div class="name">dialog</div>
+                    <div class="fontclass">.icon-7</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont icon-17"></i>
+                    <div class="name">progress</div>
+                    <div class="fontclass">.icon-17</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont icon-25"></i>
+                    <div class="name">tab</div>
+                    <div class="fontclass">.icon-25</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont icon-lazyload"></i>
+                    <div class="name">lazyload</div>
+                    <div class="fontclass">.icon-lazyload</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont icon-switch"></i>
+                    <div class="name">switch</div>
+                    <div class="fontclass">.icon-switch</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont icon-swipe"></i>
+                    <div class="name">swipe</div>
+                    <div class="fontclass">.icon-swipe</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont icon-button"></i>
+                    <div class="name">button</div>
+                    <div class="fontclass">.icon-button</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont icon-checklist"></i>
+                    <div class="name">checklist</div>
+                    <div class="fontclass">.icon-checklist</div>
+                </li>
+            
+        </ul>
+
+        <h2 id="font-class-">font-class引用</h2>
+        <hr>
+
+        <p>font-class是unicode使用方式的一种变种，主要是解决unicode书写不直观，语意不明确的问题。</p>
+        <p>与unicode使用方式相比，具有如下特点：</p>
+        <ul>
+        <li>兼容性良好，支持ie8+，及所有现代浏览器。</li>
+        <li>相比于unicode语意明确，书写更直观。可以很容易分辨这个icon是什么。</li>
+        <li>因为使用class来定义图标，所以当要替换图标时，只需要修改class里面的unicode引用。</li>
+        <li>不过因为本质上还是使用的字体，所以多色图标还是不支持的。</li>
+        </ul>
+        <p>使用步骤如下：</p>
+        <h3 id="-fontclass-">第一步：引入项目下面生成的fontclass代码：</h3>
+
+
+        <pre><code class="lang-js hljs javascript"><span class="hljs-comment">&lt;link rel="stylesheet" type="text/css" href="./iconfont.css"&gt;</span></code></pre>
+        <h3 id="-">第二步：挑选相应图标并获取类名，应用于页面：</h3>
+        <pre><code class="lang-css hljs">&lt;<span class="hljs-selector-tag">i</span> <span class="hljs-selector-tag">class</span>="<span class="hljs-selector-tag">iconfont</span> <span class="hljs-selector-tag">icon-xxx</span>"&gt;&lt;/<span class="hljs-selector-tag">i</span>&gt;</code></pre>
+        <blockquote>
+        <p>"iconfont"是你项目下的font-family。可以通过编辑项目查看，默认是"iconfont"。</p>
+        </blockquote>
+    </div>
+</body>
+</html>

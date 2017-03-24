@@ -1,38 +1,109 @@
 <template>
-<div class="hello">
-    <h1>欢迎</h1>
+<div class="page-index">
+    <ul class="page-index_uilist">
+        <li>
+            <router-link class="page-index_router" to="button">
+                <i class="icon iconfont f-fl">&#xe63c;</i>
+                <p class="f-fl">button组件</p>
+                <i class="icon iconfont f-fr">&#xe63b;</i>
+            </router-link>
+        </li>
+        <li>
+            <router-link class="page-index_router" to="header">
+                <i class="icon iconfont f-fl">&#xe8ed;</i>
+                <p class="f-fl">Header组件</p>
+                <i class="icon iconfont f-fr">&#xe63b;</i>
+            </router-link>
+        </li>
+        <li>
+            <router-link class="page-index_router" to="button">
+                <i class="icon iconfont f-fl">&#xe8ec;</i>
+                <p class="f-fl">Footer组件</p>
+                <i class="icon iconfont f-fr">&#xe63b;</i>
+            </router-link>
+        </li>
+        <li>
+            <router-link class="page-index_router" to="button">
+                <i class="icon iconfont f-fl">&#xe610;</i>
+                <p class="f-fl">Tab组件</p>
+                <i class="icon iconfont f-fr">&#xe63b;</i>
+            </router-link>
+        </li>
+        <li>
+            <router-link class="page-index_router" to="button">
+                <i class="icon iconfont f-fl">&#xe605;</i>
+                <p class="f-fl">Nav组件</p>
+                <i class="icon iconfont f-fr">&#xe63b;</i>
+            </router-link>
+        </li>
+        <li>
+            <router-link class="page-index_router" to="button">
+                <i class="icon iconfont f-fl">&#x348d;</i>
+                <p class="f-fl">Search组件</p>
+                <i class="icon iconfont f-fr">&#xe63b;</i>
+            </router-link>
+        </li>
+        <li>
+            <router-link class="page-index_router" to="button">
+                <i class="icon iconfont f-fl">&#xe66a;</i>
+                <p class="f-fl">左右滑动列表 swipe组件</p>
+                <i class="icon iconfont f-fr">&#xe63b;</i>
+            </router-link>
+        </li>
+        <li>
+            <router-link class="page-index_router" to="button">
+                <i class="icon iconfont f-fl">&#xe66a;</i>
+                <p class="f-fl">loading组件</p>
+                <i class="icon iconfont f-fr">&#xe63b;</i>
+            </router-link>
+        </li>xe66a
+    </ul>
 </div>
 </template>
 
 <script>
 export default {
-    name: 'hello',
     data() {
         return {
-            msg: 'Welcome to Your Vue.js App'
+
         }
     }
 }
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
-h1,
-h2 {
-    font-weight: normal;
-}
+<style lang="scss">
+@import "../style/var.scss";
+.page-index {
+    &_uilist {
+        list-style: none;
+        padding: 10px;
+        li {
+            border-bottom: 1px solid $border-base;
+            height: 45px;
+            line-height: 45px;
+        }
+        .f-fr {
+            float: right;
+            color: $border-base;
+        }
 
-ul {
-    list-style-type: none;
-    padding: 0;
-}
+        .f-fl {
+            float: left;;
+            color: $black;
+        }
+        .icon {
+            font-size: 28px;
+            margin-right: 10px;
+        }
+    }
 
-li {
-    display: inline-block;
-    margin: 0 10px;
-}
-
-a {
-    color: #42b983;
+    &_router {
+        display: block;
+        text-decoration: none;
+        color: $extra-light-black;
+        height: 45px;
+        line-height: 45px;
+    }
 }
 </style>

@@ -1,3 +1,18 @@
+
+/**
+ * ----------------------------------------------------------
+ * button
+ *
+ * @version  1.0
+ * @author shaqihe(shaqihecome@163.com)
+ *
+ * @module src/components/button
+ * ----------------------------------------------------------
+ * @param {string} type [info, success, warning, danger] - 按钮类型
+ * @param {Boolean} disabled  - 按钮是否禁止
+ *
+ *
+ */
 <template>
     <button :disabled="disabled" class="iui-button" @click="handleClick" :class="[
           type ? 'iui-button_' + type : '',

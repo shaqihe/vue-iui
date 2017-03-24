@@ -23,6 +23,13 @@ const routes = [
         }
     },
     {
+        path: "/header",
+        name: "header",
+        component: (resolve) => {
+            require(["../pages/header.vue"], resolve);
+        }
+    },
+    {
         path: '*',
         redirect: {
             name: "index",

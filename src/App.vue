@@ -5,6 +5,7 @@
 </template>
 
 <script>
+import "./style/icon/iconfont.css"
 import Hello from './components/Hello'
 
 export default {

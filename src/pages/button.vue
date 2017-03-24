@@ -1,6 +1,11 @@
 <template>
 <div class="iui-demo-button">
-    <h1 class="iui-demo-button_title">button demo</h1>
+    <iui-header title="Buttom 组件deom">
+        <router-link slot="left" to="/">
+            <i class="icon iconfont">&#xe622;</i>
+        </router-link>
+    </iui-header>
+    <br/><br/><br/>
     <iui-Button> 普通按钮</iui-Button>
     <iui-Button type="info"> primary按钮</iui-Button>
     <iui-Button type="success"> success按钮</iui-Button>
@@ -12,6 +17,7 @@
 
 <script>
 import iuiButton from '../components/button.vue'
+import iuiHeader from '../components/header.vue'
 export default {
     name: 'button-demo',
     data(){
@@ -20,7 +26,8 @@ export default {
         }
     },
     components: {
-        iuiButton
+        iuiButton,
+        iuiHeader
     }
 }
 </script>
