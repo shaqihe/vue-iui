@@ -30,11 +30,25 @@ const routes = [
         }
     },
     {
+        path: "/footer",
+        name: "footer",
+        component: (resolve) => {
+            require(["../pages/footer.vue"], resolve);
+        }
+    },
+    {
+        path: "/tab",
+        name: "tab",
+        component: (resolve) => {
+            require(["../pages/header.vue"], resolve);
+        }
+    },
+    {
         path: '*',
         redirect: {
             name: "index",
         },
-    },
+    }
 ];
 /**
  * 实例化路由（在这个文件里把router直接实例化，暴露出去供APP直接用）

@@ -16,14 +16,14 @@
             </router-link>
         </li>
         <li>
-            <router-link class="page-index_router" to="button">
+            <router-link class="page-index_router" to="footer">
                 <i class="icon iconfont f-fl">&#xe8ec;</i>
                 <p class="f-fl">Footer组件</p>
                 <i class="icon iconfont f-fr">&#xe63b;</i>
             </router-link>
         </li>
         <li>
-            <router-link class="page-index_router" to="button">
+            <router-link class="page-index_router" to="tab">
                 <i class="icon iconfont f-fl">&#xe610;</i>
                 <p class="f-fl">Tab组件</p>
                 <i class="icon iconfont f-fr">&#xe63b;</i>
@@ -56,7 +56,7 @@
                 <p class="f-fl">loading组件</p>
                 <i class="icon iconfont f-fr">&#xe63b;</i>
             </router-link>
-        </li>xe66a
+        </li>
     </ul>
 </div>
 </template>
