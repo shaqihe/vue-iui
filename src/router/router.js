@@ -40,7 +40,7 @@ const routes = [
         path: "/tab",
         name: "tab",
         component: (resolve) => {
-            require(["../pages/header.vue"], resolve);
+            require(["../pages/tab.vue"], resolve);
         }
     },
     {

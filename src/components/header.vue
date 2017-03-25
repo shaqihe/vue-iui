@@ -16,7 +16,7 @@
  *
  */
 <template>
-    <div class="iui-header" :style="style" :class="{'is-fixed': fixed}">
+    <div class="iui-header" :class="{'is-fixed': fixed}">
         <div class="iui-header_left">
             <slot name="left"></slot>
         </div>
