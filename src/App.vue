@@ -18,5 +18,10 @@ export default {
 
 <style lang="scss">
 @import "./style/var.scss";
-
+.iui-header_left {
+    .icon {
+        color: $white;
+        font-size: 25px;
+    }
+}
 </style>

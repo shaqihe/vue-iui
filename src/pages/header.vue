@@ -47,17 +47,5 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style lang="scss">
-@import "../style/var.scss";
-.iui-demo-button {
-    &_title {
-        text-align: center;
-        color: $light-blue;
-        border-bottom: 1px solid $dark-blue;
-    }
 
-    .icon {
-        color: $white;
-        font-size: 25px;
-    }
-}
 </style>

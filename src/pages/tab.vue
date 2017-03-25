@@ -5,7 +5,8 @@
             <i class="icon iconfont">&#xe622;</i>
         </router-link>
     </iui-header>
-    <iui-tab :tabs="tabs" @change="onChange" :index="index"/>
+    <iui-tab :tabs="tabs" @change="onChange" :index="index" />
+    <br/><br/><br/>
     {{text}}
 </div>
 </template>
@@ -28,12 +29,12 @@ export default {
                 id: 3
             }],
             index: 1,
-            text:  '我是默认值'
+            text: '我是默认值'
         }
     },
     methods: {
         onChange(tab) {
-            this.text = '选中的tab是:'+tab.name+'-------它的id为:'+tab.id;
+            this.text = '选中的tab是:' + tab.name + '-------它的id为:' + tab.id;
         }
     },
     components: {
@@ -44,4 +45,6 @@ export default {
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style lang="scss">@import "../style/var.scss";</style>
+<style lang="scss">
+
+</style>

@@ -1,4 +1,3 @@
-
 /**
  * ----------------------------------------------------------
  * Tab
@@ -53,9 +52,8 @@ export default {
 }
 </script>
 
-<style lang="scss">@import "../style/var.scss";
-@import "../style/mixin/set-border.scss";
-
+<style lang="scss">
+@import "../style/var.scss";
 .iui-tab {
     display: flex;
     width: 100%;
