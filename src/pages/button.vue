@@ -6,28 +6,22 @@
         </router-link>
     </iui-header>
     <br/><br/><br/>
-    <iui-Button> 普通按钮</iui-Button>
-    <iui-Button type="info"> primary按钮</iui-Button>
-    <iui-Button type="success"> success按钮</iui-Button>
-    <iui-Button type="warning"> primary按钮</iui-Button>
-    <iui-Button type="danger"> danger按钮</iui-Button>
-    <iui-Button type="danger" :disabled="disabled" > 按钮 disabled</iui-Button>
+    <iui-button> 普通按钮</iui-button>
+    <iui-button type="info"> primary按钮</iui-button>
+    <iui-button type="success"> success按钮</iui-button>
+    <iui-button type="warning"> primary按钮</iui-button>
+    <iui-button type="danger"> danger按钮</iui-button>
+    <iui-button type="danger" :disabled="disabled" > 按钮 disabled</iui-button>
 </div>
 </template>
 
 <script>
-import iuiButton from '../components/button.vue'
-import iuiHeader from '../components/header.vue'
 export default {
     name: 'button-demo',
     data(){
         return {
             disabled: true
         }
-    },
-    components: {
-        iuiButton,
-        iuiHeader
     }
 }
 </script>
