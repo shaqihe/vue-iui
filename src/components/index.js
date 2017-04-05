@@ -14,7 +14,8 @@ const IVue = {
     Button,
     Footer,
     Header,
-    Tab
+    Tab,
+    Search
 }
 
 const install = function() {

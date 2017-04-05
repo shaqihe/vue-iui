@@ -31,13 +31,6 @@
         </li>
         <li>
             <router-link class="page-index_router" to="button">
-                <i class="icon iconfont f-fl">&#xe605;</i>
-                <p class="f-fl">Nav组件</p>
-                <i class="icon iconfont f-fr">&#xe63b;</i>
-            </router-link>
-        </li>
-        <li>
-            <router-link class="page-index_router" to="button">
                 <i class="icon iconfont f-fl">&#x348d;</i>
                 <p class="f-fl">Search组件</p>
                 <i class="icon iconfont f-fr">&#xe63b;</i>
