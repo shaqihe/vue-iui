@@ -127,12 +127,21 @@ export default {
         height: 40px;
         line-height: 40px;
 
-        &-cancel {
+        &-cancel, &-confirm {
+            line-height: 35px;
+            display: block;
+            background-color: #fff;
+            -webkit-box-flex: 1;
+            -ms-flex: 1;
+            flex: 1;
+        }
 
+        &-cancel {
+            color: $extra-light-black;
         }
 
         &-confirm {
-            
+            color: $dark-blue;
         }
     }
 }

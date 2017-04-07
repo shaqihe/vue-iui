@@ -8,14 +8,14 @@ import Button from './button.vue'
 import Footer from './footer.vue'
 import Header from './header.vue'
 import Tab from './tab.vue'
-
+import Tab from './tab.vue'
 
 const IVue = {
     Button,
     Footer,
     Header,
     Tab,
-    Search
+
 }
 
 const install = function() {
