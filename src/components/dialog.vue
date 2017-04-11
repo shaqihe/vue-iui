@@ -9,15 +9,16 @@
  * ----------------------------------------------------------
  * @param {string} title  - 标题内容
  * @param {string} content  - 弹窗内容
- * @param {string} content  - 弹窗内容
  * @param {string} cancel  - 取消按钮的内容
  * @param {string} ok  -    确认按钮的内容
+ * @param {Boolean} onCancel  - 不提供取消按钮
+ * @param {object} dialogObj { okFn(), cancelFn()}  -  两个按钮的点击后额外执行的函数
  *
  */
 
 <template>
 <div v-if="showIt" class="iui-dialog">
-    <div class="iui-dialog_mask" ></div>
+    <div class="iui-dialog_mask" v-show="show"></div>
     <transition name="popup">
         <div class="iui-dialog_main" v-show="show">
             <div class="iui-dialog_hd">
@@ -26,8 +27,8 @@
             <div class="iui-dialog_bd" v-html="content">
             </div>
             <div class="iui-dialog_buts">
-                <a href="javascript:;" class="iui-dialog_buts-cancel" v-if="dialogObj.assistBtn" @click="cbFn(dialogObj.assistFn)">{{dialogObj.assistBtn}}</a>
-                <a href="javascript:;" class="iui-dialog_buts-confirm" @click="cbFn(dialogObj.mainFn)">{{dialogObj.mainBtn}}</a>
+                <a href="javascript:;" class="iui-dialog_buts-cancel" v-if="!onCancel" @click="cancel()">{{cancelBut}}</a>
+                <a href="javascript:;" class="iui-dialog_buts-confirm" @click="ok()">{{okBut}}</a>
             </div>
         </div>
     </transition>
@@ -38,11 +39,27 @@
 export default {
     name: 'iui-dialog',
     props: {
-        android: {
+        showIt: {
             type: Boolean,
             default: false
         },
-        showIt: {
+        title: {
+            type: String,
+            default: '我们默认标题'
+        },
+        content: {
+            type: String,
+            default: '我是默认内容！'
+        },
+        cancelBut: {
+            type: String,
+            default: '取消'
+        },
+        okBut: {
+            type: String,
+            default: '确定'
+        },
+        onCancel: {
             type: Boolean,
             default: false
         },
@@ -51,6 +68,7 @@ export default {
             default: () => {}
         }
     },
+
     data() {
         return {
             show: this.showIt
@@ -64,25 +82,24 @@ export default {
             }, 100)
         }
     },
+
     methods: {
         cancel() {
-            this.show = false
-            document.body.style.overflow = ''
-            this.$emit('hide')
-            'remove' in window.Element.prototype ? this.$el.remove() : this.$el.parentNode.removeChild(this.$el)
+            this.show = false;
+            this.dialogObj.cancelFn();
+            this.$emit('cancel');
         },
-        cbFn(fn) {
-            if (fn) {
-                fn()
-            }
-            this.cancel()
+
+        ok() {
+            this.show = false;
+            this.dialogObj.okFn();
+            this.$emit('ok');
         }
     }
 }
 </script>
 
-<style lang="scss">
-@import "../style/var.scss";
+<style lang="scss">@import "../style/var.scss";
 .iui-dialog {
     &_mask {
         opacity: 1;
@@ -97,6 +114,7 @@ export default {
 
     &_main {
         position: fixed;
+        background-color: #fff;
         left: 10%;
         top: 35%;
         z-index: 9999;
@@ -123,11 +141,12 @@ export default {
     }
 
     &_buts {
-        display:flex;
+        display: flex;
         height: 40px;
         line-height: 40px;
 
-        &-cancel, &-confirm {
+        &-cancel,
+        &-confirm {
             line-height: 35px;
             display: block;
             background-color: #fff;
@@ -138,6 +157,7 @@ export default {
 
         &-cancel {
             color: $extra-light-black;
+            border-right: 1px solid $border-base;
         }
 
         &-confirm {
@@ -145,5 +165,4 @@ export default {
         }
     }
 }
-
 </style>

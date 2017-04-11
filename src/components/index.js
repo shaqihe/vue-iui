@@ -8,20 +8,22 @@ import Button from './button.vue'
 import Footer from './footer.vue'
 import Header from './header.vue'
 import Tab from './tab.vue'
-import Tab from './tab.vue'
+import Dialog from './dialog.vue'
+import DialogFun from './dialog'
 
 const IVue = {
     Button,
     Footer,
     Header,
     Tab,
-
+    Dialog
 }
 
 const install = function() {
     Object.keys(IVue).forEach((key) => {
         Vue.component(IVue[key].name, IVue[key])
     })
+    Vue.prototype.$dialog = DialogFun
 }
 
 

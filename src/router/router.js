@@ -43,6 +43,13 @@ const routes = [{
         }
     },
     {
+        path: "/dialog",
+        name: "dialog",
+        component: (resolve) => {
+            require(["../pages/dialog.vue"], resolve);
+        }
+    },
+    {
         path: '*',
         redirect: {
             name: "index",
