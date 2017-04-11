@@ -45,14 +45,14 @@
         </li>
         <li>
             <router-link class="page-index_router" to="dialog">
-                <i class="icon iconfont f-fl">&#xe66a;</i>
+                <i class="icon iconfont  f-fl">&#xe606;</i>
                 <p class="f-fl">dialog组件</p>
                 <i class="icon iconfont f-fr">&#xe63b;</i>
             </router-link>
         </li>
         <li>
             <router-link class="page-index_router" to="button">
-                <i class="icon iconfont f-fl">&#xe66a;</i>
+                <i class="icon iconfont f-fl">&#xe64b;</i>
                 <p class="f-fl">loading组件</p>
                 <i class="icon iconfont f-fr">&#xe63b;</i>
             </router-link>
