@@ -29,20 +29,20 @@
                 <i class="icon iconfont f-fr">&#xe63b;</i>
             </router-link>
         </li>
-        <li>
+        <!-- <li>
             <router-link class="page-index_router" to="button">
                 <i class="icon iconfont f-fl">&#x348d;</i>
                 <p class="f-fl">Search组件</p>
                 <i class="icon iconfont f-fr">&#xe63b;</i>
             </router-link>
-        </li>
-        <li>
+        </li> -->
+        <!-- <li>
             <router-link class="page-index_router" to="button">
                 <i class="icon iconfont f-fl">&#xe66a;</i>
                 <p class="f-fl">左右滑动列表 swipe组件</p>
                 <i class="icon iconfont f-fr">&#xe63b;</i>
             </router-link>
-        </li>
+        </li> -->
         <li>
             <router-link class="page-index_router" to="dialog">
                 <i class="icon iconfont  f-fl">&#xe606;</i>
@@ -51,9 +51,9 @@
             </router-link>
         </li>
         <li>
-            <router-link class="page-index_router" to="button">
-                <i class="icon iconfont f-fl">&#xe64b;</i>
-                <p class="f-fl">loading组件</p>
+            <router-link class="page-index_router" to="toast">
+                <i class="icon iconfont">&#xe64b;</i>
+                <p class="f-fl">loading组件/toast组件</p>
                 <i class="icon iconfont f-fr">&#xe63b;</i>
             </router-link>
         </li>
