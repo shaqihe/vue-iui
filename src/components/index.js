@@ -9,7 +9,9 @@ import Footer from './footer.vue'
 import Header from './header.vue'
 import Tab from './tab.vue'
 import Dialog from './dialog.vue'
+import Toast from './toast.vue'
 import DialogFun from './dialog'
+import ToastFun from './toast'
 
 const IVue = {
     Button,
@@ -24,6 +26,7 @@ const install = function() {
         Vue.component(IVue[key].name, IVue[key])
     })
     Vue.prototype.$dialog = DialogFun
+    Vue.prototype.$toast= ToastFun
 }
 
 
